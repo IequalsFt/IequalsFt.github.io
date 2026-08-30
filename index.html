@@ -64,6 +64,19 @@
   ul.clean { list-style: none; padding-left: 0; }
   ul.clean li { margin-bottom: 0.5rem; }
 
+  /* CV timeline */
+  .cv-entry {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 0 1.2rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .cv-entry:last-child { border-bottom: none; }
+  .cv-years { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .cv-deg { font-weight: 600; }
+  .cv-detail { margin-top: 0.15rem; font-size: 0.92rem; color: var(--muted); }
+
   a { color: var(--link); }
   .muted { color: var(--muted); }
   .note { font-size: 0.88rem; color: var(--muted); }
@@ -119,12 +132,22 @@
 
   <section id="cv">
     <h2>CV</h2>
-    <ul class="clean">
-      <li>Ph.D. in Physics, Joint PhD Program of Zhejiang University &amp; Westlake University — 2020–present</li>
-      <li style="padding-left:1.2rem">Advisor: Prof. Pavlos G. Savvidis (Westlake University)</li>
-      <li>B.S. in Physics, Southern University of Science and Technology (SUSTech) — 2015–2019</li>
-      <li style="padding-left:1.2rem">Academic advisor: Prof. Dapeng Yu · Residential mentor: Prof. Hao Wang</li>
-    </ul>
+    <div class="cv-entry">
+      <span class="cv-years">2020 – present</span>
+      <div>
+        <div class="cv-deg">Ph.D. in Physics</div>
+        <div>Joint PhD Program of Zhejiang University &amp; Westlake University</div>
+        <div class="cv-detail">Advisor: Prof. Pavlos G. Savvidis (Westlake University)</div>
+      </div>
+    </div>
+    <div class="cv-entry">
+      <span class="cv-years">2015 – 2019</span>
+      <div>
+        <div class="cv-deg">B.S. in Physics</div>
+        <div>Southern University of Science and Technology (SUSTech)</div>
+        <div class="cv-detail">Academic advisor: Prof. Dapeng Yu · Residential mentor: Prof. Hao Wang</div>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
