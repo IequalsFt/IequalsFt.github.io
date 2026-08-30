@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zhen Cui | Westlake University</title>
+<meta name="description" content="Zhen Cui — PhD student in Physics at Westlake University. Polariton optoelectronics, planar DBR microcavities, strong coupling.">
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #1a5fb4;
+    --border: #e2e2e2;
+    --bg: #ffffff;
+    --link: #1a5fb4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e8e8e8;
+      --muted: #aaa;
+      --accent: #7cb1f0;
+      --border: #333;
+      --bg: #16161a;
+      --link: #7cb1f0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .container { max-width: 820px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+
+  header.site {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 1rem; margin-bottom: 2.5rem; border-bottom: 1px solid var(--border);
+  }
+  .site-name { font-weight: 600; }
+  nav a { margin-left: 1.2rem; color: var(--muted); text-decoration: none; font-size: 0.92rem; }
+  nav a:hover { color: var(--link); }
+  nav a.active { color: var(--text); }
+
+  .hero { display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap; }
+  .hero-text { flex: 1 1 460px; }
+  .hero-text h1 { margin: 0 0 0.3rem; font-size: 2rem; }
+  .hero-text .title { color: var(--muted); margin-bottom: 1.2rem; }
+  .avatar {
+    width: 170px; height: 210px; object-fit: cover; border-radius: 6px;
+    border: 1px solid var(--border); background: var(--card, #f3f3f5);
+    display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.8rem;
+  }
+
+  section { margin-top: 3rem; }
+  h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; margin-bottom: 1rem; }
+
+  .pub { margin-bottom: 1.1rem; padding-left: 1.2rem; text-indent: -1.2rem; }
+  .pub .me { font-weight: 600; }
+  .pub .venue { color: var(--muted); font-style: italic; }
+  .pub .links { font-size: 0.85rem; }
+
+  ul.clean { list-style: none; padding-left: 0; }
+  ul.clean li { margin-bottom: 0.5rem; }
+
+  a { color: var(--link); }
+  .muted { color: var(--muted); }
+  .note { font-size: 0.88rem; color: var(--muted); }
+
+  /* Bilingual toggle */
+  html[lang="en"] .zh { display: none; }
+  html[lang="zh"] .en { display: none; }
+  .lang-switch button {
+    background: none; border: 1px solid var(--border); border-radius: 4px;
+    padding: 0.15rem 0.55rem; cursor: pointer; font-size: 0.85rem; color: var(--muted);
+  }
+  .lang-switch button.on { color: var(--text); border-color: var(--text); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="site">
+    <div class="site-name">Zhen Cui · 崔祯</div>
+    <nav>
+      <a href="#publications" class="en">Publications</a>
+      <a href="#publications" class="zh">论文</a>
+      <a href="#cv" class="en">CV</a>
+      <a href="#cv" class="zh">简历</a>
+      <a href="#contact" class="en">Contact</a>
+      <a href="#contact" class="zh">联系</a>
+      <span class="lang-switch">
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+        <button id="btn-zh" onclick="setLang('zh')">中文</button>
+      </span>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <p class="en">
+        I am a PhD student in Physics at <a href="https://www.westlake.edu.cn" target="_blank">Westlake University</a>,
+        working with Prof. Pavlos G. Savvidis. My research focuses on polariton optoelectronics:
+        planar DBR microcavities, exciton–polariton strong coupling in perovskites, and polariton-based devices.
+      </p>
+      <p class="zh">
+        我西湖大学物理学博士研究生，导师为 Pavlos G. Savvidis 教授。
+        研究方向为极化激元光电子学：平板 DBR 微腔、钙钛矿中的激子–极化激元强耦合，以及基于极化激元的光电器件。
+      </p>
+      <p class="note en">This page is under construction — publications and CV will be updated soon.</p>
+      <p class="note zh">页面建设中——论文与简历将陆续更新。</p>
+    </div>
+    <div class="avatar">Photo</div>
+  </div>
+
+  <section id="publications">
+    <h2 class="en">Publications</h2>
+    <h2 class="zh">论文</h2>
+
+    <div class="pub en">
+      <span class="me">Z. Cui</span>, et al. — <span class="venue">Journal (under review)</span>.
+      Polaron LED based on a DBR microcavity. <span class="muted">(co-first author)</span>
+    </div>
+    <div class="pub zh">
+      <span class="me">Z. Cui</span> 等 — <span class="venue">期刊（在审）</span>。
+      基于 DBR 微腔的 Polaron LED。<span class="muted">（共同第一作者）</span>
+    </div>
+
+    <p class="note en">Full list coming soon.</p>
+    <p class="note zh">完整列表即将补充。</p>
+  </section>
+
+  <section id="cv">
+    <h2 class="en">CV</h2>
+    <h2 class="zh">简历</h2>
+    <ul class="clean en">
+      <li>Ph.D. in Physics, Westlake University — present</li>
+      <li>Advisor: Prof. Pavlos G. Savvidis</li>
+    </ul>
+    <ul class="clean zh">
+      <li>西湖大学 物理学博士 — 至今</li>
+      <li>导师：Pavlos G. Savvidis 教授</li>
+    </ul>
+    <p class="note en">Full CV (PDF) coming soon.</p>
+    <p class="note zh">完整简历（PDF）即将补充。</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="en">Contact</h2>
+    <h2 class="zh">联系方式</h2>
+    <ul class="clean">
+      <li>Email: <span class="muted">your.email@example.com</span>（TODO）</li>
+      <li class="en">Westlake University, Hangzhou, Zhejiang, China</li>
+      <li class="zh">中国浙江省杭州市 西湖大学</li>
+    </ul>
+  </section>
+
+  <footer style="margin-top:4rem" class="note">
+    <span class="en">© 2026 Zhen Cui · <a href="https://github.com/IequalsFt">GitHub</a></span>
+    <span class="zh">© 2026 崔祯 · <a href="https://github.com/IequalsFt">GitHub</a></span>
+  </footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    localStorage.setItem('site-lang', lang);
+    document.getElementById('btn-en').classList.toggle('on', lang === 'en');
+    document.getElementById('btn-zh').classList.toggle('on', lang === 'zh');
+  }
+  const saved = localStorage.getItem('site-lang')
+    || (navigator.language.startsWith('zh') ? 'zh' : 'en');
+  setLang(saved);
+</script>
+</body>
+</html>
