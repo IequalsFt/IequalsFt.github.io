@@ -26,7 +26,7 @@
   }
   * { box-sizing: border-box; }
   body {
-    font-family: -apple-system, "Helvetica Neue", "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
     color: var(--text);
     background: var(--bg);
     margin: 0;
@@ -51,7 +51,6 @@
   .avatar {
     width: 170px; height: 210px; object-fit: cover; object-position: 50% 0%; border-radius: 6px;
     border: 1px solid var(--border); background: var(--card, #f3f3f5);
-    display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.8rem;
   }
 
   section { margin-top: 3rem; }
@@ -68,141 +67,79 @@
   a { color: var(--link); }
   .muted { color: var(--muted); }
   .note { font-size: 0.88rem; color: var(--muted); }
-
-  /* Bilingual toggle */
-  html[lang="en"] .zh { display: none; }
-  html[lang="zh"] .en { display: none; }
-  .lang-switch button {
-    background: none; border: 1px solid var(--border); border-radius: 4px;
-    padding: 0.15rem 0.55rem; cursor: pointer; font-size: 0.85rem; color: var(--muted);
-  }
-  .lang-switch button.on { color: var(--text); border-color: var(--text); }
 </style>
 </head>
 <body>
 <div class="container">
 
   <header class="site">
-    <div class="site-name">Zhen Cui · 崔祯</div>
+    <div class="site-name">Zhen Cui</div>
     <nav>
-      <a href="#publications" class="en">Publications</a>
-      <a href="#publications" class="zh">论文</a>
-      <a href="#cv" class="en">CV</a>
-      <a href="#cv" class="zh">简历</a>
-      <a href="#contact" class="en">Contact</a>
-      <a href="#contact" class="zh">联系</a>
-      <span class="lang-switch">
-        <button id="btn-en" onclick="setLang('en')">EN</button>
-        <button id="btn-zh" onclick="setLang('zh')">中文</button>
-      </span>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <div class="hero">
     <div class="hero-text">
-      <p class="en">
+      <p>
         I am a PhD student in Physics at <a href="https://www.westlake.edu.cn" target="_blank">Westlake University</a>,
         working with Prof. Pavlos G. Savvidis. My research focuses on polariton optoelectronics:
         planar DBR microcavities, exciton–polariton strong coupling in perovskites, and polariton-based devices.
-      </p>
-      <p class="zh">
-        我西湖大学物理学博士研究生，导师为 Pavlos G. Savvidis 教授。
-        研究方向为极化激元光电子学：平板 DBR 微腔、钙钛矿中的激子–极化激元强耦合，以及基于极化激元的光电器件。
       </p>
     </div>
     <img class="avatar" src="photo.jpg" alt="Zhen Cui">
   </div>
 
   <section id="publications">
-    <h2 class="en">Publications</h2>
-    <h2 class="zh">论文</h2>
+    <h2>Publications</h2>
 
-    <div class="pub en">
+    <div class="pub">
       K. Chong, Y. Yang, X. Zhou, Y. Zhu, Z. Song, <span class="me">Z. Cui</span>, J. Ning, X. Lin, P. G. Savvidis, B. Ji —
       <span class="venue">Nano Letters</span>, 26(9), 3282–3290, 2026.
       Low-Threshold Lasing in Colloidal InP/ZnSe/ZnS Quantum Dots via ZnSe Interlayer Engineering.
       <span class="links"><a href="https://doi.org/10.1021/acs.nanolett.6c00239" target="_blank">doi:10.1021/acs.nanolett.6c00239</a></span>
     </div>
-    <div class="pub zh">
-      K. Chong, Y. Yang, X. Zhou, Y. Zhu, Z. Song, <span class="me">Z. Cui</span>, J. Ning, X. Lin, P. G. Savvidis, B. Ji —
-      <span class="venue">Nano Letters</span>, 26(9), 3282–3290, 2026。
-      Low-Threshold Lasing in Colloidal InP/ZnSe/ZnS Quantum Dots via ZnSe Interlayer Engineering（通过 ZnSe 中间层工程实现胶体 InP/ZnSe/ZnS 量子点的低阈值激光）。
-      <span class="links"><a href="https://doi.org/10.1021/acs.nanolett.6c00239" target="_blank">doi:10.1021/acs.nanolett.6c00239</a></span>
-    </div>
 
-    <div class="pub en">
+    <div class="pub">
       Y. Zheng, J. Sun, Y. Ma, H. Zhang, <span class="me">Z. Cui</span>, G. G. Paschos, X. Song, Y. Tao, P. Savvidis, W. Kong, L. Wen, S. Bian, M. Sawan —
       <span class="venue">Advanced Science</span>, 12(4), 2025.
       High Quality–Factor All–Dielectric Metacavity for Label–Free Biosensing.
       <span class="links"><a href="https://doi.org/10.1002/advs.202410125" target="_blank">doi:10.1002/advs.202410125</a></span>
     </div>
-    <div class="pub zh">
-      Y. Zheng, J. Sun, Y. Ma, H. Zhang, <span class="me">Z. Cui</span>, G. G. Paschos, X. Song, Y. Tao, P. Savvidis, W. Kong, L. Wen, S. Bian, M. Sawan —
-      <span class="venue">Advanced Science</span>, 12(4), 2025。
-      High Quality–Factor All–Dielectric Metacavity for Label–Free Biosensing（高品质因子全电介质超构腔用于无标记生物传感）。
-      <span class="links"><a href="https://doi.org/10.1002/advs.202410125" target="_blank">doi:10.1002/advs.202410125</a></span>
-    </div>
 
-    <div class="pub en">
+    <div class="pub">
       Y. Su, <span class="me">Z. Cui</span>, P. Savvidis, G. Rong, M. Sawan —
       <span class="venue">46th Annual International Conference of the IEEE EMBC</span>, 2024.
       Microcavity based Biosensor for Detection of SARS-CoV-2.
       <span class="links"><a href="https://doi.org/10.1109/EMBC53108.2024.10782828" target="_blank">doi:10.1109/EMBC53108.2024.10782828</a></span>
     </div>
-    <div class="pub zh">
-      Y. Su, <span class="me">Z. Cui</span>, P. Savvidis, G. Rong, M. Sawan —
-      <span class="venue">IEEE EMBC 国际医学与生物工程年会</span>, 2024。
-      Microcavity based Biosensor for Detection of SARS-CoV-2（基于微腔的生物传感器用于 SARS-CoV-2 检测）。
-      <span class="links"><a href="https://doi.org/10.1109/EMBC53108.2024.10782828" target="_blank">doi:10.1109/EMBC53108.2024.10782828</a></span>
-    </div>
   </section>
 
   <section id="cv">
-    <h2 class="en">CV</h2>
-    <h2 class="zh">简历</h2>
-    <ul class="clean en">
+    <h2>CV</h2>
+    <ul class="clean">
       <li>Ph.D. in Physics, Joint PhD Program of Zhejiang University &amp; Westlake University — 2020–present</li>
-      <li>Advisor: Prof. Pavlos G. Savvidis (Westlake University)</li>
+      <li style="padding-left:1.2rem">Advisor: Prof. Pavlos G. Savvidis (Westlake University)</li>
       <li>B.S. in Physics, Southern University of Science and Technology (SUSTech) — 2015–2019</li>
       <li style="padding-left:1.2rem">Academic advisor: Prof. Dapeng Yu · Residential mentor: Prof. Hao Wang</li>
-    </ul>
-    <ul class="clean zh">
-      <li>浙江大学–西湖大学联合培养项目 物理学博士 — 2020 至今</li>
-      <li>导师：Pavlos G. Savvidis 教授（西湖大学）</li>
-      <li>南方科技大学 物理学学士 — 2015–2019</li>
-      <li style="padding-left:1.2rem">专业学术导师：俞大鹏 教授 · 书院生活导师：王浩</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2 class="en">Contact</h2>
-    <h2 class="zh">联系方式</h2>
+    <h2>Contact</h2>
     <ul class="clean">
       <li>Email: cuizhen@westlake.edu.cn</li>
       <li>ORCID: <a href="https://orcid.org/0009-0004-0374-2891" target="_blank">0009-0004-0374-2891</a></li>
-      <li class="en">Group: <a href="https://quantopt.lab.westlake.edu.cn" target="_blank">Quantum Optoelectronics Lab, Westlake University</a></li>
-      <li class="zh">课题组：<a href="https://quantopt.lab.westlake.edu.cn" target="_blank">西湖大学量子光电实验室</a></li>
-      <li class="en">Westlake University, Hangzhou, Zhejiang, China</li>
-      <li class="zh">中国浙江省杭州市 西湖大学</li>
+      <li>Group: <a href="https://quantopt.lab.westlake.edu.cn" target="_blank">Quantum Optoelectronics Lab, Westlake University</a></li>
+      <li>Westlake University, Hangzhou, Zhejiang, China</li>
     </ul>
   </section>
 
   <footer style="margin-top:4rem" class="note">
-    <span class="en">© 2026 Zhen Cui · <a href="https://github.com/IequalsFt">GitHub</a></span>
-    <span class="zh">© 2026 崔祯 · <a href="https://github.com/IequalsFt">GitHub</a></span>
+    © 2026 Zhen Cui · <a href="https://github.com/IequalsFt">GitHub</a>
   </footer>
 </div>
-
-<script>
-  function setLang(lang) {
-    document.documentElement.lang = lang;
-    localStorage.setItem('site-lang', lang);
-    document.getElementById('btn-en').classList.toggle('on', lang === 'en');
-    document.getElementById('btn-zh').classList.toggle('on', lang === 'zh');
-  }
-  const saved = localStorage.getItem('site-lang')
-    || (navigator.language.startsWith('zh') ? 'zh' : 'en');
-  setLang(saved);
-</script>
 </body>
 </html>
