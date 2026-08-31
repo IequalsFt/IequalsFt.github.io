@@ -1,100 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zhen Cui | Westlake University</title>
-<meta name="description" content="Zhen Cui — PhD student in Physics at Westlake University. Polariton optoelectronics, planar DBR microcavities, strong coupling.">
-<style>
-  :root {
-    --text: #1a1a1a;
-    --muted: #555;
-    --accent: #1a5fb4;
-    --border: #e2e2e2;
-    --bg: #ffffff;
-    --link: #1a5fb4;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --text: #e8e8e8;
-      --muted: #aaa;
-      --accent: #7cb1f0;
-      --border: #333;
-      --bg: #16161a;
-      --link: #7cb1f0;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-    color: var(--text);
-    background: var(--bg);
-    margin: 0;
-    line-height: 1.7;
-    font-size: 16px;
-  }
-  .container { max-width: 820px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
-
-  header.site {
-    display: flex; justify-content: space-between; align-items: center;
-    padding-bottom: 1rem; margin-bottom: 2.5rem; border-bottom: 1px solid var(--border);
-  }
-  .site-name { font-weight: 600; }
-  nav a { margin-left: 1.2rem; color: var(--muted); text-decoration: none; font-size: 0.92rem; }
-  nav a:hover { color: var(--link); }
-  nav a.active { color: var(--text); }
-
-  .hero { display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap; }
-  .hero-text { flex: 1 1 460px; }
-  .hero-text h1 { margin: 0 0 0.3rem; font-size: 2rem; }
-  .hero-text .title { color: var(--muted); margin-bottom: 1.2rem; }
-  .avatar {
-    width: 170px; height: 210px; object-fit: cover; object-position: 50% 0%; border-radius: 6px;
-    border: 1px solid var(--border); background: var(--card, #f3f3f5);
-  }
-
-  section { margin-top: 3rem; }
-  h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; margin-bottom: 1rem; }
-
-  .pub { margin-bottom: 1.1rem; padding-left: 1.2rem; text-indent: -1.2rem; }
-  .pub .me { font-weight: 600; }
-  .pub .venue { color: var(--muted); font-style: italic; }
-  .pub .links { font-size: 0.85rem; }
-
-  ul.clean { list-style: none; padding-left: 0; }
-  ul.clean li { margin-bottom: 0.5rem; }
-
-  /* CV timeline */
-  .cv-entry {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 0 1.2rem;
-    padding: 0.55rem 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .cv-entry:last-child { border-bottom: none; }
-  .cv-years { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-  .cv-deg { font-weight: 600; }
-  .cv-detail { margin-top: 0.15rem; font-size: 0.92rem; color: var(--muted); }
-  .cv-advisors { display: flex; gap: 2rem; flex-wrap: wrap; }
-
-  a { color: var(--link); }
-  .muted { color: var(--muted); }
-  .note { font-size: 0.88rem; color: var(--muted); }
-</style>
-</head>
-<body>
-<div class="container">
-
-  <header class="site">
-    <div class="site-name">Zhen Cui</div>
-    <nav>
-      <a href="#publications">Publications</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
+---
+layout: default
+home: true
+---
   <div class="hero">
     <div class="hero-text">
       <p>
@@ -171,10 +78,3 @@
       <li>Westlake University, Hangzhou, Zhejiang, China</li>
     </ul>
   </section>
-
-  <footer style="margin-top:4rem" class="note">
-    © 2026 Zhen Cui · <a href="https://github.com/IequalsFt">GitHub</a>
-  </footer>
-</div>
-</body>
-</html>

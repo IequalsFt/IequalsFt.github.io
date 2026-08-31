@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="post-header">
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    {{ page.date | date: "%Y-%m-%d" }}
+    {% if page.tags %} · {% for t in page.tags %}<span class="post-tag">{{ t }}</span>{% endfor %}{% endif %}
+  </div>
+</div>
+{% if page.alt_lang_url %}
+<div class="lang-toggle">
+  {% if page.lang == 'zh' %}
+    <a href="{{ page.alt_lang_url | relative_url }}">→ English version</a>
+  {% else %}
+    <a href="{{ page.alt_lang_url | relative_url }}">→ 中文版</a>
+  {% endif %}
+</div>
+{% endif %}
+<div class="post-content">
+{{ content }}
+</div>
