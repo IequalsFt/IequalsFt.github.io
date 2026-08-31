@@ -8,6 +8,9 @@ highlighter: rouge
 
 permalink: /blog/:year/:month/:day/:title/
 
+# Post dates are written in local time (UTC+8), ahead of the Pages build clock (UTC)
+future: true
+
 exclude:
   - README.md
   - Gemfile
