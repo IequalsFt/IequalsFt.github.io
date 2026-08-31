@@ -1,0 +1,19 @@
+---
+layout: page
+blog: true
+title: Blog
+---
+
+<p class="muted">Research notes, conference reports, and tooling tips — mostly on polaritonics, microcavities, and FDTD simulation.</p>
+
+{% for post in site.posts %}
+<div class="post-item">
+  <div>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.lang == 'zh' %}<span class="post-tag">中文</span>{% endif %}
+  </div>
+  <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+</div>
+{% else %}
+<p class="note">No posts yet.</p>
+{% endfor %}
