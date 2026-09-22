@@ -30,3 +30,9 @@ site served by GitHub Pages — no theme gem, no build step locally.
 gem install github-pages   # or: bundle
 jekyll serve
 ```
+
+## TODO
+
+- [ ] **Add a downloadable CV PDF** — the homepage has a CV timeline section (`index.html`
+      §`cv`), but no PDF. Drop the file at `assets/cv.pdf` and link it from that section.
+
